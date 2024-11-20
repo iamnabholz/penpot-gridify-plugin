@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gridify</title>
+        <link rel="icon" type="image/png" href="content/icon.png" />
     </head>
     <body>
         <main>
@@ -12,14 +13,15 @@
                 <p>Lines</p>
             </div>
 
-            <label for="dot-size">
+            <label for="size">
                 Size
                 <input
-                    min="1"
+                    min="0.1"
+                    step="0.1"
                     class="input"
                     type="number"
-                    placeholder="Dot size"
-                    id="dot-size"
+                    placeholder="Size or width"
+                    id="size"
                     value="8"
                 />
             </label>
@@ -78,7 +80,7 @@
             <button
                 type="button"
                 data-appearance="primary"
-                data-handler="create-text"
+                data-handler="create-grid"
             >
                 Create grid
             </button>

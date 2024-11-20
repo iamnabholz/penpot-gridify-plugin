@@ -22,11 +22,9 @@ choiceSelector.addEventListener("click", (event: Event) => {
 });
 
 document
-  .querySelector("[data-handler='create-text']")
+  .querySelector("[data-handler='create-grid']")
   ?.addEventListener("click", () => {
-    const dotSizeInput = document.getElementById(
-      "dot-size",
-    ) as HTMLInputElement;
+    const sizeInput = document.getElementById("size") as HTMLInputElement;
 
     const columns = document.getElementById("columns") as HTMLInputElement;
     const rows = document.getElementById("rows") as HTMLInputElement;
@@ -37,8 +35,9 @@ document
     // send message to plugin.ts
     parent.postMessage(
       {
-        msg: "create-text",
-        size: parseInt(dotSizeInput.value),
+        msg: "create-grid",
+        type: selectedValue.toLowerCase(),
+        size: parseFloat(sizeInput.value),
         rows: parseInt(rows.value),
         columns: parseInt(columns.value),
         rowGap: parseInt(rowGap.value),
