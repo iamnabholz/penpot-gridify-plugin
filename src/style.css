@@ -12,7 +12,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 14px;
 }
 
 section {
@@ -25,15 +25,13 @@ section {
     flex-direction: row;
 }
 
-input {
-    width: 100%;
+label {
+    font-size: 14px;
 }
 
-.preview {
-    border-radius: var(--spacing-8);
-    height: 10rem;
+input {
+    margin-top: 4px;
     width: 100%;
-    background-color: red;
 }
 
 .choice-selector {

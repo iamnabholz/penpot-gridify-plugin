@@ -17,15 +17,35 @@ choiceSelector.addEventListener("click", (event: Event) => {
 
     // Add selection to clicked item
     target.classList.add("choice-selected");
-    selectedValue = target.textContent || "Any";
+    selectedValue = target.textContent || "Dots";
   }
 });
 
 document
   .querySelector("[data-handler='create-text']")
   ?.addEventListener("click", () => {
+    const dotSizeInput = document.getElementById(
+      "dot-size",
+    ) as HTMLInputElement;
+
+    const columns = document.getElementById("columns") as HTMLInputElement;
+    const rows = document.getElementById("rows") as HTMLInputElement;
+
+    const columnGap = document.getElementById("column-gap") as HTMLInputElement;
+    const rowGap = document.getElementById("row-gap") as HTMLInputElement;
+
     // send message to plugin.ts
-    parent.postMessage("create-text", "*");
+    parent.postMessage(
+      {
+        msg: "create-text",
+        size: parseInt(dotSizeInput.value),
+        rows: parseInt(rows.value),
+        columns: parseInt(columns.value),
+        rowGap: parseInt(rowGap.value),
+        columnGap: parseInt(columnGap.value),
+      },
+      "*",
+    );
   });
 
 // Listen plugin.ts messages

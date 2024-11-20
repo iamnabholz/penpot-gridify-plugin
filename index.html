@@ -12,35 +12,67 @@
                 <p>Lines</p>
             </div>
 
-            <section class="rows">
+            <label for="dot-size">
+                Size
                 <input
+                    min="1"
                     class="input"
                     type="number"
-                    placeholder="Columns"
-                    id="input-1"
+                    placeholder="Dot size"
+                    id="dot-size"
+                    value="8"
                 />
+            </label>
 
-                <input
-                    class="input"
-                    type="number"
-                    placeholder="Rows"
-                    id="input-1"
-                />
+            <section class="rows">
+                <label for="columns">
+                    Columns
+                    <input
+                        min="1"
+                        class="input"
+                        type="number"
+                        placeholder="Columns"
+                        id="columns"
+                        value="4"
+                    />
+                </label>
+
+                <label for="rows">
+                    Rows
+                    <input
+                        min="1"
+                        class="input"
+                        type="number"
+                        placeholder="Rows"
+                        id="rows"
+                        value="4"
+                    />
+                </label>
             </section>
             <section class="rows">
-                <input
-                    class="input"
-                    type="number"
-                    placeholder="Column gap"
-                    id="input-1"
-                />
+                <label for="column-gap">
+                    Column gap
+                    <input
+                        min="0"
+                        class="input"
+                        type="number"
+                        placeholder="Column gap"
+                        id="column-gap"
+                        value="8"
+                    />
+                </label>
 
-                <input
-                    class="input"
-                    type="number"
-                    placeholder="Row gap"
-                    id="input-1"
-                />
+                <label for="row-gap">
+                    Row gap
+                    <input
+                        min="0"
+                        class="input"
+                        type="number"
+                        placeholder="Row gap"
+                        id="row-gap"
+                        value="8"
+                    />
+                </label>
             </section>
 
             <button
@@ -48,10 +80,8 @@
                 data-appearance="primary"
                 data-handler="create-text"
             >
-                Create text
+                Create grid
             </button>
-
-            <div class="preview"></div>
         </main>
 
         <script type="module" src="/src/main.ts"></script>
