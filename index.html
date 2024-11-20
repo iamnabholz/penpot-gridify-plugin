@@ -1,25 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Penpot plugin example</title>
-  </head>
-  <body>
-    <p>Penpot plugin starter template</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gridify</title>
+    </head>
+    <body>
+        <main>
+            <div class="choice-selector">
+                <p class="choice-selected">Dots</p>
+                <p>Lines</p>
+            </div>
 
-    <p>
-      Checkout the
-      <a target="_blank" href="https://help.penpot.app/plugins/"
-        >documentation</a
-      >
-      to get started.
-    </p>
+            <section class="rows">
+                <input
+                    class="input"
+                    type="number"
+                    placeholder="Columns"
+                    id="input-1"
+                />
 
-    <button type="button" data-appearance="primary" data-handler="create-text">
-      Create text
-    </button>
+                <input
+                    class="input"
+                    type="number"
+                    placeholder="Rows"
+                    id="input-1"
+                />
+            </section>
+            <section class="rows">
+                <input
+                    class="input"
+                    type="number"
+                    placeholder="Column gap"
+                    id="input-1"
+                />
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+                <input
+                    class="input"
+                    type="number"
+                    placeholder="Row gap"
+                    id="input-1"
+                />
+            </section>
+
+            <button
+                type="button"
+                data-appearance="primary"
+                data-handler="create-text"
+            >
+                Create text
+            </button>
+
+            <div class="preview"></div>
+        </main>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>

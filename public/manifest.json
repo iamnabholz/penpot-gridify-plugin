@@ -1,6 +1,6 @@
 {
-  "name": "Penpot starter plugin",
+  "name": "Gridify",
   "code": "plugin.js",
-  "description": "This is a starter plugin for Penpot",
+  "description": "Generate line or dotted grids easily",
   "permissions": ["content:read", "content:write"]
 }
