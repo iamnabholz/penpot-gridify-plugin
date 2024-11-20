@@ -8,6 +8,6 @@ This plugin allows you to create grids of dots or lines for your Penpot designs.
 
 Open the plugins modal in your Penpot project and add the next url
 
-- https://gridify-penpot-plugin.netlify.app/manifest.json
+- https://penpot-gridify-plugin.netlify.app/manifest.json
 
 Click install and you're setup! you can start generating grids for your designs
