@@ -1,6 +1,6 @@
 penpot.ui.open("Gridify", `?theme=${penpot.theme}`, {
   width: 280,
-  height: 360,
+  height: 390,
 });
 
 const generateDots = (message: any) => {

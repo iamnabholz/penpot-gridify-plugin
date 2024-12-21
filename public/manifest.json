@@ -2,6 +2,6 @@
   "name": "Gridify",
   "code": "plugin.js",
   "icon": "content/icon.png",
-  "description": "Generate lines or dotted grids for your designs",
+  "description": "Quickly generate dot & line grids for your designs",
   "permissions": ["content:read", "content:write"]
 }

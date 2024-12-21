@@ -60,6 +60,29 @@ input {
     background-color: var(--lb-tertiary);
 }
 
+.lock-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: 42px;
+    height: 34px;
+    padding: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms linear;
+}
+
+.lock-action > svg {
+    height: 100%;
+    width: 100%;
+}
+
+.lock-action.locked {
+    color: white;
+    background-color: var(--la-primary);
+}
+
 [data-theme="dark"] {
     .choice-selected {
         color: var(--da-primary);
@@ -72,5 +95,10 @@ input {
 
     .choice-selector p:hover {
         color: white;
+    }
+
+    .lock-action.locked {
+        color: black;
+        background-color: var(--da-primary);
     }
 }
